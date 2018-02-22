@@ -4,5 +4,6 @@
     <string name="when">every evening</string>
     <string name="address">C/ Josefa Diaz, 4 </string>
     <string name="city">Madrid</string>
+    <string name="web">https://www.google.es/</string>
 
 </resources>
