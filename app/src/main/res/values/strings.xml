@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">taberna flamenca</string>
     <string name="el_cortijo">El Cortijo</string>
-    <string name="when">every evening</string>
-    <string name="address">C/ Josefa Diaz, 4 </string>
-    <string name="city">Madrid</string>
+    <string name="contact">info@flamenco-shows.com</string>
+    <string name="address">C/ Josefa Diaz, 4 MADRID</string>
     <string name="web">https://www.google.es/</string>
 
 </resources>

@@ -124,61 +124,74 @@
             </LinearLayout>
         </LinearLayout> <!-- end icons -->
         <!--beginning information-->
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.5"
-            android:orientation="vertical"
+            android:padding="30dp"
             android:background="#C3272D">
-            <TextView
-                android:layout_width="match_parent"
+            <!--telephone-->
+            <ImageView
+                android:id="@+id/icon_call"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:fontFamily="sans-serif-condensed"
-                android:textSize="15dp"
-                android:text="click on the icons for more information"/>
+                android:padding="10dp"
+                android:src="@drawable/ic_action_call"/>
             <TextView
-                android:id="@+id/time"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/name"
-                android:textAlignment="center"
-                android:padding="5dp"
+                android:padding="10dp"
                 android:textSize="20sp"
+                android:layout_toRightOf="@id/icon_call"
+                android:text="(0034)610 765 384"/>
+            <!--contact-->
+            <ImageView
+                android:id="@+id/icon_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@id/icon_call"
+                android:src="@drawable/ic_action_email"/>
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/icon_email"
+                android:layout_toEndOf="@+id/icon_email"
+                android:layout_toRightOf="@+id/icon_email"
+                android:padding="10dp"
+                android:text="@string/contact"
                 android:textColor="#000000"
-                android:text="@string/when" />
+                android:textSize="20sp" />
+            <!--off
+            <ImageView
+                android:id="@+id/icon_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon_email"
+                android:src="@drawable/ic_action_location_on"/>
             <TextView
                 android:id="@+id/address"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/time"
-                android:textAlignment="center"
-                android:padding="5dp"
-                android:textSize="15sp"
+                android:layout_toRightOf="@id/icon_location"
+                android:layout_below="@id/icon_email"
+                android:textSize="20sp"
                 android:textColor="#000000"
                 android:text="@string/address" />
-            <TextView
-                android:id="@+id/city"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/address"
-                android:textAlignment="center"
-                android:textStyle="bold"
-                android:textSize="15sp"
-                android:textColor="#000000"
-                android:text="@string/city" />
+
             <TextView
                 android:id="@+id/www"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/city"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:textColor="#000000"
                 android:autoLink="web"
                 android:text="@string/web" />
-        </LinearLayout> <!-- end information -->
+            -->
+        </RelativeLayout> <!-- end information -->
 
 </LinearLayout>
 
