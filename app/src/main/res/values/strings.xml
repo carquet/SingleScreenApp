@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">taberna flamenca</string>
     <string name="el_cortijo">El Cortijo</string>
+    <string name="sangria">sangria</string>
+    <string name="tapas">tapas</string>
+    <string name="show">show</string>
+    <string name="telephone">(0034)610 765 384</string>
     <string name="contact">info@flamenco-shows.com</string>
     <string name="address">C/ Josefa Diaz, 4 MADRID</string>
-    <string name="web">https://www.google.es/</string>
+    <string name="web">https://flamenco-shows.com</string>
 
 </resources>

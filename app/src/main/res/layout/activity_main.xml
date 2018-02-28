@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.5"
-            android:background="#C3272D">
+            android:background="@color/background">
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -24,24 +24,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:paddingTop="15dp"
+                android:paddingTop="@dimen/padding_default"
                 android:textAllCaps="true"
-                android:textSize="35sp"
+                android:textSize="@dimen/title_size"
                 android:textStyle="bold"
                 android:text="@string/app_name"
-                android:textColor="#000"/>
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:padding="20dp"
+                android:padding="@dimen/padding_default"
                 android:textStyle="italic"
                 android:fontFamily="cursive"
-                android:textSize="55sp"
+                android:textSize="@dimen/subtitle_size"
                 android:text="@string/el_cortijo"
-                android:textColor="#f9f49d"/>
+                android:textColor="@color/gold"/>
         </RelativeLayout> <!--end of header-->
         <!-- beginning icons -->
         <LinearLayout
@@ -53,112 +53,113 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#8A1319"
+                android:background="@color/sangria_background"
                 android:layout_weight="0.1"
-                android:padding="20sp">
+                android:padding="@dimen/padding_default">
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:src="@drawable/sangria"/>
-
                 <TextView
                     android:id="@+id/drinks"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/font_size"
                     android:fontFamily="sans-serif-smallcaps"
-                    android:textColor="#777777"
+                    android:textColor="@color/icon_box_text_color"
                     android:textStyle="bold"
-                    android:text="sangria"/>
+                    android:text="@string/sangria"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#AE191F"
+                android:background="@color/tapas_background"
                 android:layout_weight="0.1"
-                android:padding="20sp">
+                android:padding="@dimen/padding_default">
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:src="@drawable/tapas"/>
                 <TextView
-                    android:id="@+id/drinks"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/font_size"
                     android:fontFamily="sans-serif-smallcaps"
-                    android:textColor="#777777"
+                    android:textColor="@color/icon_box_text_color"
                     android:textStyle="bold"
-                    android:text="tapas"/>
+                    android:text="@string/tapas"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#D95234"
+                android:background="@color/show_background"
                 android:layout_weight="0.1"
-                android:padding="20sp">
+                android:padding="@dimen/padding_default">
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:src="@drawable/show"/>
                 <TextView
-                    android:id="@+id/drinks"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/font_size"
                     android:fontFamily="sans-serif-smallcaps"
-                    android:textColor="#777777"
+                    android:textColor="@color/icon_box_text_color"
                     android:textStyle="bold"
-                    android:text="show"/>
+                    android:text="@string/show"/>
             </LinearLayout>
         </LinearLayout> <!-- end icons -->
         <!--beginning information-->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.5"
-            android:padding="30dp"
-            android:background="#C3272D">
+            android:padding="@dimen/padding_general_info"
+            android:background="@color/background">
             <!--telephone-->
             <ImageView
                 android:id="@+id/icon_call"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:padding="@dimen/padding_info"
                 android:src="@drawable/ic_action_call"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textSize="20sp"
+                android:padding="@dimen/padding_info"
+                android:textSize="@dimen/font_size"
+                android:textColor="@color/black"
                 android:layout_toRightOf="@id/icon_call"
-                android:text="(0034)610 765 384"/>
+                android:text="@string/telephone"/>
             <!--contact-->
             <ImageView
                 android:id="@+id/icon_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:padding="@dimen/padding_info"
                 android:layout_below="@id/icon_call"
                 android:src="@drawable/ic_action_email"/>
             <TextView
                 android:id="@+id/contact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#000000"
-                android:textSize="20sp"
+                android:padding="@dimen/padding_info"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size"
                 android:layout_alignTop="@+id/icon_email"
                 android:layout_toEndOf="@+id/icon_email"
                 android:layout_toRightOf="@+id/icon_email"
@@ -168,34 +169,23 @@
                 android:id="@+id/icon_location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:padding="@dimen/padding_info"
                 android:layout_below="@id/icon_email"
                 android:src="@drawable/ic_action_location_on"/>
             <TextView
                 android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:padding="10dp"
-                android:textColor="#000000"
+                android:textSize="@dimen/font_size"
+                android:padding="@dimen/padding_info"
+                android:textColor="@color/black"
                 android:layout_alignTop="@+id/icon_location"
                 android:layout_toEndOf="@+id/icon_location"
                 android:layout_toRightOf="@+id/icon_location"
                 android:text="@string/address" />
-            <!--off
-
-            <TextView
-                android:id="@+id/www"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textStyle="bold"
-                android:textSize="15sp"
-                android:textColor="#000000"
-                android:autoLink="web"
-                android:text="@string/web" />
-            -->
         </RelativeLayout> <!-- end information -->
+    </ScrollView>
+
 
 </LinearLayout>
 

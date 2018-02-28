@@ -3,4 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="background">#C3272D</color>
+    <color name="black">#000</color>
+    <color name="gold">#f9f49d</color>
+    <color name="sangria_background">#8A1319</color>
+    <color name="tapas_background">#AE191F</color>
+    <color name="show_background">#D95234</color>
+    <color name="icon_box_text_color">#777777</color>
 </resources>
